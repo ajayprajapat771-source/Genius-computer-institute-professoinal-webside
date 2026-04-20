@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <u><title>Ansh That</title></u>
+    <link rel="icon" href="Icon.png">
+</head>
+
+<style>
+body{
+background: black;
+margin:auto;
+user-select: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    filter: brightness(0deg);
+    transition: 0.4s ease;
+
+}
+.Bc{
+background: rgb(155, 146, 146);
+text-align: center;
+padding: 1px ;
+}
+
+.Bc ul{
+align-items: center;
+display: flex;
+list-style: none;
+gap: 20px   ;
+text-align: center;
+}
+.Bc li a {
+    text-decoration: none;
+    color: black;
+word-spacing: 40%;
+font-size:22px;
+font-family:'Agency FB';
+letter-spacing: 2px;
+font-weight: bold;
+transition: all 0.3s ease;
+text-shadow: 0 0 1px red;
+}
+
+.Bc li a:hover{
+color: white;
+letter-spacing: 0;
+background: red;
+transition: letter-spacing 0.4s ease;
+border: 1px solid white;
+border-radius: 5px;
+padding: 15px;
+filter: drop-shadow(2px 2px 10px red);
+box-shadow: 0 0 10px black;
+border-style:groove;
+}
+
+.Bc p{
+color: white;
+position: absolute;
+margin-left: 1100px;
+font-size: 25px;
+font-family: 'Curlz MT';
+text-shadow: 0 0 5px black;
+border: 1px solid red;
+border-radius: 15px;
+background: linear-gradient(to bottom left,rgb(125, 133, 125),rgb(38, 0, 255));
+filter: drop-shadow(2px 2px 5px red);
+}
+.SMS img{
+    padding: 30px;
+    margin-bottom: -4px;
+    width: 29%;
+    filter: drop-shadow(2px 2px 5px rgb(255, 0, 0));
+    display: block;
+    
+}
+
+
+.Blue{
+width: 0;
+height: 0;
+border-left: 100px solid transparent;
+border-right: 100px solid transparent;
+border-bottom: 150px solid green;
+  transition: all 0.3s ease;
+  margin-top: -300px;
+  margin-left: 300px;
+ position: static;
+
+}
+
+.Blue:hover{
+  border-bottom: 150px solid red;
+  border-radius: 50%;
+  
+}
+
+
+.BIT{
+display: flex;
+text-align: center;
+}
+
+button{
+background: none;
+border: none;
+position:absolute;
+display: block;
+margin-left: 1000px;
+width: 30px;
+padding: 12px 0px;
+color: white;
+letter-spacing: 1px;
+transition: 0.3s ease;
+font-size: 20px;
+}
+
+
+button:hover{
+transform: rotate(90deg);
+cursor: pointer;
+
+}
+
+.Radhe{
+background: rgba(255, 255, 255, 0.5);
+filter: opacity(-300px);
+width: 0;
+height: 100vh;
+display:flex;
+overflow: hidden;
+position: fixed;
+transition: all 0.3s ease;
+z-index: 1000;
+flex-direction: column;
+
+}
+
+.Radhe p{
+position:relative;
+color: rgb(255, 255, 255);
+font-family: 'Agency FB';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+white-space: nowrap;
+margin-left: 50px;
+}
+
+.Radhe ul{
+color: white;
+
+}
+
+.Radhe li{
+font-size: 20px;
+transition: 0.3s ease;
+border: 5px solid black;
+letter-spacing:3px ;
+
+}
+
+.Radhe li::before{
+content: "💯";
+
+}
+
+
+.Radhe li:hover{
+background: black;
+color: white;
+letter-spacing: 0px;
+
+transform: scale(1.1);
+font-weight: bold;
+filter: drop-shadow(2px 2px 5px green);
+}
+.Radhe p:hover{
+background: linear-gradient(to left,rgb(35, 106, 238),white);
+color: transparent;
+-webkit-background-clip:text;
+transition: 0.3s ease;
+
+transform:rotate(1deg)
+
+}
+
+.Box{
+background: linear-gradient(to right bottom,rgb(206, 201, 201),white);
+border: 5px solid black;
+border-style:hidden;
+height: 50vh;
+}
+
+.Box ul{
+display: flex;
+justify-content: center;
+list-style: none;
+gap: 20px;
+}
+
+.Box li{
+background: yellow;
+height: 35vh;
+padding: 13px 13px;
+width: 30vh;
+margin: 10px;
+text-align: center;
+border-right:100px solid rgb(206, 152, 152);
+border-radius: 20px;
+font-size: 25px;
+filter: drop-shadow(2px 2px 5px red);
+font-weight: bold;
+font-family:'Arial Black';
+transition: 0.3s ease;
+
+
+}
+
+.Box li:hover{
+border-right:100px solid red ;
+filter:invert(10%);
+text-shadow: 2px 2px 5px  rgb(0, 0, 0);
+color: white;
+box-shadow: 2px 2px 5px black;
+transform: perspective(600px) rotateX(-10deg) rotateY(-10deg);
+}
+
+.Box span{
+font-size:14px;
+display:block;
+margin-top:10px;
+font-family: Arial;
+color: transparent;
+}
+
+.Box li:hover span{
+text-shadow: none;
+color: black;
+cursor:default;
+
+
+}
+
+.Not{
+color: white;
+background: black;
+text-align: center;
+cursor: help;
+padding: 3px 4px;
+border: 2px solid rgb(255, 255, 255);
+letter-spacing: 4px;
+transition:0.3s ease;
+font-weight: bold;
+font-family: 'Arial Black';
+font-size: 20px;
+}
+
+.Not:hover{
+letter-spacing: 0;
+text-shadow: 
+2px 2px 0 red,
+4px 4px 0 blue,
+6px 6px 0 black;
+}
+
+.Rockstar{
+padding: 12px 12px;
+border: 2px solid rgb(255, 255, 255);
+border-radius: 50px;
+background: black;
+color: white;
+font-size: 15px;
+font-weight: bold;
+outline: none;
+transition: all 0.3s ease;
+margin-left: 50%;
+position: absolute;
+transition: 0.800% ease;
+
+
+}
+
+.Rockstar:hover{
+filter: drop-shadow(5px 1px 5px red);
+text-shadow: 1px 1px green;
+border-radius: 0px;
+outline: none;
+
+}
+.Rockstar:focus{
+    filter: drop-shadow(5px 1px 5px red);
+text-shadow: 3px 3px 5px red;
+border-radius: 0px;
+outline: none;
+
+}
+
+.Tigher{
+height: 60px;
+position: absolute;
+margin-left: 45%;
+transition: all 0.3s ease;
+  animation: Ansh 1s linear infinite;}
+
+.Tigher:hover {
+    filter: drop-shadow(5px 5px 10px blue);
+    transform: rotate(50deg);
+    border: 2px solid white;
+    border-radius: 50px;
+    border-style:dotted;
+    border-color: red black white;
+    cursor:pointer;
+    animation: Ansh3 2s ease-in-out infinite alternate ;
+
+  
+}
+
+.TheKing{
+   text-align: center;
+   background: white;
+    color: red;
+       width: 300px;
+       margin-left: 35%;
+       position: absolute;
+    text-align: center;
+    border: 3px solid white;
+   border-radius: 80px;
+    border-left: 10px solid green;
+    border-right: 10px solid orange;
+    animation: digit 2s infinite alternate;
+    padding: 3px;
+
+}
+
+.TheKing span{
+ 
+  font-size: 50px;
+  animation: Like 2s ease-in-out infinite alternate;
+  
+}
+
+.TheKing span:nth-child(2){
+    animation-delay: 2s;
+}
+
+.TheKing span:nth-child(3){
+    animation-delay: 4s;
+}
+
+table{
+    background: white;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+table th{
+    border-right:5px solid black ;
+    font-family:'Cooper Black' ;
+    font-size: 20px;
+    animation: Tru 2s infinite alternate;
+}
+
+table td{
+     border-right:5px solid black ;
+     font-size: 30px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     animation: Rit 2s infinite alternate;
+}
+.But{
+    background: white;
+    padding: 12px 13px;
+
+
+}
+
+.But p{
+    background:none;
+    width: 100px;
+    text-align: center;
+    margin-left:45% ;
+    padding: 13px;
+    color: black;
+    font-size: 20px;
+    border: 5px solid red;
+    border-radius: 50px;
+    transform: scale(1.1);
+    transition: all 0.3 ease;
+    box-shadow: 2px 2px 5px black;
+     transition: all 0.3s ease;
+     filter: drop-shadow(2px 2px 5px red);
+   
+}
+
+.But p:hover{
+    background: red;
+    color: white;
+}
+
+.But p:active{
+    background: green;
+    transform: scale(1.0);
+    box-shadow: 2px 2px 5px white;
+    color: white;
+    border: 5px  solid green;
+    filter: drop-shadow(2px 2px 5px green);
+
+
+
+}
+
+@keyframes Tru {
+
+    0%{transform: rotate(2deg); text-decoration: underline;}
+     50%{text-decoration: underline;}
+    
+}
+
+
+
+
+
+
+@keyframes Rit {
+
+    From{
+        filter: drop-shadow(2px 2px 5px red);
+        text-shadow: 
+        2px 2px 2px red,
+        4px 4px  2px green ;
+        
+        
+
+    }to{
+        filter: drop-shadow(2px 2px 2px darkblue);
+        color: white;
+       
+
+    }
+    
+}
+
+
+
+
+
+
+
+@keyframes UUU {
+
+    From{
+        text-decoration: underline;
+       
+    }
+    to{
+        text-decoration: none;
+    }
+    
+}
+
+
+@keyframes digit {
+
+    From{
+        border-left: 10px solid green;
+         border-right: 10px solid orange;
+    }
+    to{
+        border-left: 10px solid orange;
+         border-right: 10px solid green;
+    }
+}
+
+@keyframes Like {
+
+    From{
+    opacity: 0;
+    background: white;
+    border-radius: 0px;
+    color: black;
+    letter-spacing: 0px;
+    
+        
+
+    }
+    to{
+        opacity: 1;
+        background: black;
+        border-radius: 50px;
+        filter: drop-shadow(2px 2px 5px black);
+        color: white;
+        letter-spacing: 5px;
+
+     
+      
+    }
+    
+}
+
+
+
+
+
+@keyframes Ansh {
+    Form{
+        background: red;
+        border-radius: 0px;
+        transform: scale(0.0);
+        filter: drop-shadow(2px 2px 5px black);
+    }
+    to{
+        background:red;
+        border-radius: 50px;
+        transform: scale(1.1);
+        filter: drop-shadow(2px 2px 5px black);
+    }
+
+}
+
+
+@keyframes  Ansh3{
+
+    Form{
+    transform: rotate(0px); 
+    transition: all 0.3s ease;
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+
+.Tu{
+    height: 80ch;
+    position: absolute;
+    filter: drop-shadow(2px 2px 5px white);
+    animation: tu 2s linear infinite;
+    transition: all 0.3s ease;
+    
+}
+
+@keyframes tu {
+    From{
+        filter: drop-shadow(4px 4px 10px red);
+
+    }
+    to{
+        filter: drop-shadow(4px 4px 10px yellow);
+
+    }
+    
+}
+
+.Last{
+    background: white;
+    text-align: center;
+
+}
+
+.Last p{
+    color: black;
+    text-shadow:
+    2px 2px 0px red,
+    4px 4px 0px black,
+    6px 6px 0px white;
+    animation: King 2s infinite alternate;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.Last a:hover{
+    filter: drop-shadow(2px 1px 1px blue);
+    transition: all 0.3s ease;
+    
+}
+
+.Last h1{
+    letter-spacing: 5px;
+    animation: DW 2s infinite alternate;
+}
+
+@keyframes DW {
+
+From{
+    letter-spacing: 0px;
+}
+
+to{
+    letter-spacing: 5px;
+    color: white;
+}
+    
+}
+
+
+
+@keyframes King {
+
+    From{
+          text-shadow:
+    2px 2px 0px red,
+    4px 4px 0px black,
+    6px 6px 0px white;
+
+    transform: rotate3d(360deg);
+    }
+    to{
+       text-shadow: none;
+    }
+    
+}
+
+</style>
+
+<body id="Like">
+
+    <img id="Tik" class="Tu" src="Star.gif" style="display: none;">
+
+    
+
+<div class="Bc">
+ 
+<ul>
+       
+    <li><a href="#">  Home</a></li>
+    <li><a href="#">Insert</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Us</a></li>
+    <button onclick="openmenu()" >☰</button>
+    <p onclick="dont()"><U>ANSH THAT</U></p><input type="name" id="name"  name="User_name" class="Rockstar" placeholder="Type Here......">
+     <img src="Icon/Go lets.png"  alt="Icon/Go lets.png" class="Tigher" onclick="window.location.href='Genius Computer Form.html'">
+</ul>
+</div>
+<div class="TheKing">
+    <span>C</span>
+    <span>O</span>
+    <span>D</span>
+    </div>
+
+
+<div id="king" class="Radhe">
+<p><i><u>HIGH PROPULAR LENGUWEG</u></i></p>
+
+<ul>
+<li><span class="Today">JS.</span>This Js The Head Of Backend Relitected of Web devolporing</li>
+<li>This Py for Python of The realited or Univaricity And devlopmenting of Ai I Wonder power OF python</li>
+<li>This is A C++ Is a gaming and other's using laguweg of Delvopment a creat a Game like PGMI & Free Fire</li>
+</ul>
+
+</div> 
+    
+
+<div class="SMS"><img src="Icon/king.png"></div>
+<div class="BIT">
+<div class="Blue2"></div>
+<div class="Blue"></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+</div>
+<script>
+    
+    function my(){
+        let Dont = document.getElementById("Like")
+        let sit =  document.getElementById("This")
+        let Tik = document.getElementById("Tik")
+
+        sit.classList.toggle("active");
+
+        if(sit.innerHTML ==="☾⋆⁺₊ON"){
+            sit.style.background="none";
+            sit.innerHTML ="☀ OFF";
+            sit.style.filter= "drop-shadow(2px 2px 5px red)";
+            sit.style.border="5px  solid red";
+            Dont.style.filter="";
+            Tik.style.display="none";
+           
+
+
+            
+            
+            
+
+        }else{
+            sit.innerHTML = "☾⋆⁺₊ON";
+            sit.style.background="none";
+            sit.style.filter="drop-shadow(2px 2px 5px green)";
+            sit.style.border="5px  solid green";
+            Dont.style.filter="brightness(60%)";
+             Tik.style.display="block";
+
+             
+            
+            
+           
+        }
+        
+    }
+
+     function Deeth(){ 
+
+            alert("File Has Downloading......");
+
+        }
+
+    function dont(){
+       let name =  prompt("Your name  ")
+            
+       if(name ==="ANSHWAS"){
+        alert("O King Ansh apka suwagat hia")
+        navigator.clipboard.writeText("AnshThat")
+       }
+
+       if(name ===""){
+        alert("Oh tune name hi tyep nhi kiya")
+       }
+       
+       else{
+         alert("Hellow " +name)
+ 
+       }
+        
+   }
+
+
+
+function openmenu(){
+ let menu = document.getElementById("king");
+
+if(menu.style.width==="350px"){
+menu.style.width="0";
+}else{
+  menu.style.width="350px";
+}
+}
+
+</script>
+
+
+<div class="Box">
+    <div class="Not">Hover Section Note:- Hover To Details Un Hover To No Details</div>
+<ul>
+<li>Python 🥇
+    <span>Python is a popular, high-level programming language known for its simplicity and readability, often requiring fewer lines of code than languages like C++ or Java. It is widely used in data science, artificial intelligence, web development, and automation.</span>
+</li> 
+<li>Javascript 🥈
+<span>JavaScript is a versatile, interpreted scripting language primarily used to create interactive, dynamic content on websites by running directly in the browser. It is lightweight, cross-platform, and acts as the "behavior" layer alongside HTML (structure) and CSS (styling). It enables features like data validation, animations, and server-side operations.</span>
+</li>
+<li>C++ 🥉
+<span>C++ is a powerful, high-performance, object-oriented language created by Bjarne Stroustrup in 1979 for system programming, game development, and applications requiring high speed. It supports polymorphism, encapsulation, and inheritance, and it allows for both manual and automatic memory management.</span>
+</li>
+</ul>
+</div>
+
+
+
+<div class="ANSHKING">
+<table>
+
+<tr>
+<th>Devloper & Creater</th>
+<th>Product By</th>
+<th>Us Form Lenguweg</th>
+</tr>
+    <tr>
+        <td><span> </span><u>Ansh Prajapat</u><span></span></td>
+        <td><span> </span>Creater Master <u>Ansh</u><span> </span></td>
+        <td><span> </span>HTML|CSS|JS<span> </span></td>
+
+    </tr>
+
+
+</table>
+
+
+</div>
+<div   class="But">
+  <p id="This" onclick="my()">☀ OFF</p>  
+</div>
+
+<div class="Last">
+<h1>DOWLOD SECTION</h1>
+<p>DOWNLOAD OFFICE 19</p> <a href="Icon/office.rar"  onclick="Deeth()" id="Deeth" download>Click To download office 19</a>
+<p>DOWNLOAD ADOB PHOTOSHOP 0.7</p>  <a href="#" download>Click To download Adob Photoshop 0.7</a>
+<p>DOWNLOAD CORLDROW</p>  <a href="#" download>Click To download CDR</a>
+<p>DOWNLOD PAGE MAKER</p>  <a href="#" download>CLICK TO download PM</a>
+
+</div>
+
+
+
+</body>
+</html>
